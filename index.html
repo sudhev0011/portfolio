@@ -480,31 +480,5 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="./validation.js"></script>
-
-
-
-
-  <script>
-		$("#contact-form").submit((e)=>{
-			e.preventDefault()
-			$.ajax({
-				url:"https://script.google.com/macros/s/AKfycbws2ANZBeoYxKbUk7SpvfxBCMbXoKm3Y00bCM550x1Yfde5b2agwQyt9QYWRcUY2mjqXg/exec",
-				data:$("#contact-form").serialize(),
-				method:"post",
-				success:function (response){
-					alert("Form submitted successfully")
-					window.location.reload()
-					//window.location.href="https://google.com"
-				},
-				error:function (err){
-					alert("Something Error")
-	
-				}
-			})
-		})
-	</script>
-
-  
 </body>
-
 </html>
